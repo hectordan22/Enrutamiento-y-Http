@@ -1,0 +1,29 @@
+
+<h1 style="text-align: center; margin-top: 2em;">Alumnos</h1>
+ <a style="background-color: rgb(143, 179, 143); padding: 8px;" href="/estudiantes/registrar">Registrar Nuevo</a>
+
+ <table style="width: 50%; margin: auto; margin-top: 3em;">
+   <thead>
+    <th style="border: solid black 0.5px; background-color: #c8e2e2; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;">Id</th>
+    <th style="border: solid black 0.5px; background-color: #c8e2e2; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;">Nombre</th>
+    <th style="border: solid black 0.5px;  background-color: #c8e2e2; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;">Cedula</th>
+    <th style="border: solid black 0.5px;  background-color: #c8e2e2; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;">Correo</th>
+    <th style="border: solid black 0.5px;  background-color: #c8e2e2; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;">Seccion</th>
+   </thead>
+   <tbody> 
+   <% for( let i = 0; i < estudiantes.length; i++ ) { %>
+   
+        <tr style="text-align: center;">
+          <td style="border: solid black 0.5px; background-color: #def7f7; font-weight: 500; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;"> <%= estudiantes[i].id %>   </td>
+         <td style="border: solid black 0.5px; background-color: #def7f7; font-weight: 500; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;"> <%= estudiantes[i].nombre %>   </td>
+         <td style="border: solid black 0.5px; background-color: #def7f7; font-weight: 500; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;"> <%= estudiantes[i].cedula %> </td>
+         <td style="border: solid black 0.5px; background-color: #def7f7; font-weight: 500; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;"> <%= estudiantes[i].correo %>  </td>
+         <td style="border: solid black 0.5px; background-color: #def7f7; font-weight: 500; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px;"> <%= estudiantes[i].seccion %>  </td>
+      </tr>
+     <% } %>
+    
+   </tbody>
+  </table>
+
+
+
